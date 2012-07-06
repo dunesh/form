@@ -1,0 +1,8 @@
+<h1>Form for student</h1>
+  <%= form_for @student, :url => { :action => "create" } do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field(:name) %>
+  <%= f.label:roll %>
+  <%= f.text_field(:roll) %>
+  <%= f.submit("submit") %>
+<% end %>
