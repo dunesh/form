@@ -1,5 +1,7 @@
 Form::Application.routes.draw do
   
+  
+  get 'form/second'
   resources :form
   resources :students
 

@@ -3,10 +3,15 @@ class FormController < ApplicationController
     @student = Student.new()
   end
   
+  def second
+  @display=Student.all()
+  end
+  
   def create
-  binding.pry
     @student=Student.new(params[:student])
     @student.save!
     redirect_to :back
   end
+   
+  
 end
