@@ -1,3 +1,4 @@
+<%=flash[:notice]%>
 <h1>Form for student</h1>
   <%= form_for @student, :url => { :action => "create" } do |f| %>
   <%= f.label :name %>
@@ -8,3 +9,4 @@
     
 <% end %>
 <%= link_to 'second',form_second_path%>
+
